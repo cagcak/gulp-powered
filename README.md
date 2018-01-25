@@ -1,8 +1,4 @@
 # gulp-powered
-A Gulp builded, Bootstrap-v4 powered static website app starter-kit project
-
-
-# gulp-powered
 
 A Gulp builded, Bootstrap-v4 powered static website app starter-kit project
 
@@ -30,6 +26,12 @@ A step by step series of examples that tell you have to get a development env ru
 3- gulp
 ```
 
+or
+
+```
+npm install gulp-powered && npm -i && gulp
+```
+
 Now it must be running on localhost
 
 ## Built With
@@ -41,7 +43,7 @@ Now it must be running on localhost
 
 
 ## Versioning
-
+* 1.0.0 - Initial Release
 
 ## Authors
 
@@ -50,7 +52,5 @@ Now it must be running on localhost
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/cagcak/gulp-powered/blob/master/LICENSE) file for details
 
