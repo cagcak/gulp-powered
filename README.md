@@ -1,18 +1,20 @@
 # gulp-powered
 
-A Gulp builded, Bootstrap-v4 powered static website app starter-kit project
+A Gulp build, Bootstrap-v4 powered static website app starter-kit project
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Whenever you think about building a soft-depended static web app project, just use this kit to start developing on it. This boilerplate-like project is completely free-to-use for your private,public, or commercial projects.  
+
+These instructions below will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
 What things you need to install the software and how to install them:
 
 ```
-npm
-gulp
+- npm
+- gulp
 ```
 
 ### Installing
@@ -40,7 +42,7 @@ Now it must be running on localhost
 
 ## Contributing
 
-
+* Currently there is no external contribution.
 
 ## Versioning
 * 1.0.0 - Initial Release
@@ -53,4 +55,3 @@ Now it must be running on localhost
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/cagcak/gulp-powered/blob/master/LICENSE) file for details
-
