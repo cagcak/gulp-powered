@@ -1,0 +1,27 @@
+{
+  "name": "gulp-powered",
+  "version": "1.0.0",
+  "description": "A Gulp builded, Bootstrap-v4 powered static website app starter-kit project",
+  "main": "/dist",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cagcak/gulp-powered.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Gulp",
+    "jQuery",
+    "i18n",
+    "nunjucks",
+    "webapp"
+  ],
+  "author": "cagcak <developer.cagcak@gmail.com> (http://www.cagcak.tk)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cagcak/gulp-powered/issues"
+  },
+  "homepage": "https://github.com/cagcak/gulp-powered#readme"
+}
