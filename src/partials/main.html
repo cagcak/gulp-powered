@@ -42,15 +42,9 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        {% include 'bone/topnav.html' %}
-      </div>
-    </nav>
+    {% include 'bone/topnav.html' %}
 
-    <div class="container">
-      {% block content %}{% endblock %}
-    </div>
+    {% block content %}{% endblock %}
 
     {% include 'bone/footer.html' %}
 
