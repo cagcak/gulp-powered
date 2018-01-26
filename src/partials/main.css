@@ -1,0 +1,15 @@
+/*
+ * Custom Styles
+ * Note: Consider to not make duplicate styles with Bootstrap
+ *       If necessary, define new override classes
+*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #222222;
+}
+.footer > .container {
+    margin: 20px;
+}

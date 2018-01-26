@@ -8,6 +8,10 @@ Whenever you think about building a soft-depended static web app project, just u
 
 These instructions below will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+### What is going on?
+
+When you install this project, it starts to build immediately by Gulp. Afterwards, there will be rendered files/folders inside the /dist directory. The web page you see, comes from only /dist folder and derivatives.
+
 ### Prerequisites
 
 What things you need to install the software and how to install them:

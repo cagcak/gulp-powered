@@ -26,7 +26,7 @@
     
     <title>
       
-        Home : Example
+        Contact : Example
       
     </title>
 
@@ -64,7 +64,7 @@
         <!-- for loop in Nunjucks -->
         
             
-            <li class="active">
+            <li>
             
               <a href="index.html">
                   <span>Home</span>
@@ -88,7 +88,7 @@
             </li>
         
             
-            <li>
+            <li class="active">
             
               <a href="contact/index.html">
                   <span>Contact</span>
@@ -107,7 +107,7 @@
     <div class="col-lg-12 text-center">
         <p>
             You may want to check the code in
-            <code>src/pages/index.html</code> :)
+            <code>src/pages/contact/index.html</code> :)
         </p>
         <button id="click-me">Click me!</button>
     </div>
@@ -124,5 +124,11 @@
 
     <script src="http://localhost:3000/js//script.js"></script>
     
+<script type="text/javascript">
+$('#click-me').on('click', function(){
+    alert('Button clicked!');
+});
+</script>
+
 </body>
 </html>
