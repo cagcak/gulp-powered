@@ -10,13 +10,28 @@ const PATHS = {
   output: 'dist',
   partials: 'src/partials',
   pages: 'src/pages',
+  locales: 'src/locales/i18n',
+  modules: "node_modules/",
+  helpers: 'src/lib/',
+  scripts: 'src/js/'
 }
 
 gulp.task('js', function() {
     gulp.src([
-            'node_modules/jquery/dist/jquery.js',
-            'node_modules/bootstrap/dist/js/bootstrap.js',
-            'src/js/**/*.js'
+            PATHS.modules + 'jquery/dist/jquery.js',
+            PATHS.modules + 'bootstrap/dist/js/bootstrap.js',
+            PATHS.helpers + 'browserstate/scripts/bundled/html4+html5/jquery.history.js',
+            PATHS.modules + '@fortawesome/fontawesome/index.js',
+            PATHS.helpers + 'websanova/url.min.js',
+            PATHS.helpers + 'jquery.i18n/libs/CLDRPluralRuleParser/src/CLDRPluralRuleParser.js',
+            PATHS.helpers + 'jquery.i18n/src/jquery.i18n.js',
+            PATHS.helpers + 'jquery.i18n/src/jquery.i18n.messagestore.js',
+            PATHS.helpers + 'jquery.i18n/src/jquery.i18n.fallbacks.js',
+            PATHS.helpers + 'jquery.i18n/src/jquery.i18n.language.js',
+            PATHS.helpers + 'jquery.i18n/src/jquery.i18n.parser.js',
+            PATHS.helpers + 'jquery.i18n/src/jquery.i18n.emitter.js',
+            PATHS.helpers + 'jquery.i18n/src/jquery.i18n.emitter.bidi.js',
+            PATHS.scripts + '/**/*.js'
         ])
         .pipe(uglify())
         .pipe(concat('script.js'))
@@ -25,7 +40,7 @@ gulp.task('js', function() {
 
 gulp.task('css', function() {
     gulp.src([
-            'node_modules/bootstrap/dist/css/bootstrap.css',
+            PATHS.modules + 'bootstrap/dist/css/bootstrap.css',
             'src/css/**/*.css'
         ])
         .pipe(minifyCSS())
@@ -50,6 +65,12 @@ gulp.task('nunjucks', function() {
         .pipe(gulp.dest(PATHS.output));
 });
 
+gulp.task('i18n', function () {
+  console.log('Copying translation files..');
+  return gulp.src(PATHS.locales + '/**/*.json')
+    .pipe(gulp.dest(PATHS.output + '/locales/i18n'));
+});
+
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
@@ -67,7 +88,6 @@ gulp.task('watch', function() {
 });
 
 gulp.task('watch', function() {
-        gulp.run('default');
 
         gulp.watch('src/css/**/*.css', function(event) {
             console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
@@ -81,7 +101,7 @@ gulp.task('watch', function() {
 
         gulp.watch('src/media/img/**/*', function(event) {
             console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-            gulp.run('images');
+            gulp.run('img');
         });
 });
 
@@ -99,7 +119,7 @@ gulp.task('minify', function() {
 
 // run browserSync auto-reload together with nunjucks auto-render
 gulp.task('auto', ['browserSync', 'watch']);
-
+// gulp.task('prepare', ['extract-locales']);
 gulp.task('default', function() {
-    gulp.run('js', 'css', 'img', 'nunjucks', 'browserSync');
+    gulp.run('js', 'css', 'img' , 'i18n' , 'nunjucks', 'browserSync');
 });

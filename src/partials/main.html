@@ -39,16 +39,17 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="{{ SCRIPT }}/script.js"></script>
 </head>
 <body>
-
+<p data-i18n="about"></p>
     {% include 'bone/topnav.html' %}
 
     {% block content %}{% endblock %}
 
     {% include 'bone/footer.html' %}
 
-    <script src="{{ SCRIPT }}/script.js"></script>
     {% block scripts %}{% endblock %}
+
 </body>
 </html>

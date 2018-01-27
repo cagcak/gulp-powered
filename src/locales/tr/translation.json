@@ -1,0 +1,19 @@
+{
+  "key": "value",
+  "keyDeep": {
+    "inner": "value"
+  },
+	
+	"SiteName": "Site adı",
+	"Main": "Anasayfa",
+
+	"TR":"Türkçe",
+	"EN":"English",
+	"Search":"Arama",
+	"Lang":"Dil",
+
+	"about":"Hakkında",
+	"service":"Hizmetler",
+	"contact":"İletişim"
+
+}
