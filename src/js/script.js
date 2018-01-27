@@ -27,7 +27,7 @@ var getFirstBrowserLanguage = function () {
 };
 
 console.log(getFirstBrowserLanguage());
-var __dirname = location.protocol + '//' + location.host ;
+var __dirname = location.protocol + '//' + location.host + '/' + location.pathname.replace(/\//g, "") ;
 
 var set_locale_to = function(locale) {
 	'use strict';

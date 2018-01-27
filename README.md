@@ -1,10 +1,10 @@
 # gulp-powered
 
-A Gulp build, Bootstrap-v4 powered static website app starter-kit project
+A Client-side Gulp build, Bootstrap-v4 powered static website app starter-kit project
 
 ## Getting Started
 
-Whenever you think about building a soft-depended static web app project, just use this kit to start developing on it. This boilerplate-like project is completely free-to-use for your private,public, or commercial projects.  
+Whenever you think about building a soft-depended static web app project, just use this kit to start developing on it. This boilerplate-like project is completely free-to-use for your public projects.  
 
 These instructions below will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -17,15 +17,24 @@ When you install this project, it starts to build immediately by Gulp. Afterward
 What things you need to install the software and how to install them:
 
 ```
-- npm
-- gulp
+- [nodejs & npm] (https://nodejs.org/en/)
+- [gulp] (https://gulpjs.com/)
 ```
 
-### Installing
+### Preparing
 
-A step by step series of examples that tell you have to get a development env running
+If you have already installed the packages above skip this part.
+If you don't have packages above, follow instructions below:
 
+1- Download nodejs + npm bundle from [here] ()
+```
+2- npm install gulp-cli -g
+3- npm install gulp -D
+```
 
+### Installing & Running
+
+# Running with Browsersync web server
 ```
 1- npm install gulp-powered
 2- npm -i
@@ -37,7 +46,12 @@ or
 ```
 npm install gulp-powered && npm -i && gulp
 ```
-
+# Running with live-server or other (configure port and mounting) web servers
+```
+1- $ npm install gulp-powered && npm -i
+2- # change DIR as 'protocol + dev + dist' instead of 'protocol + dev' in 'src/partials/main.html' / line:7
+3- $ live-server --port=3000 --open=/dist
+```
 Now it must be running on localhost
 
 ## Built With
