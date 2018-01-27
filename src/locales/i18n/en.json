@@ -3,12 +3,12 @@
 		"authors": [
 		  "Author name"
 		],
-		"last-updated":" 2018-01-01",
-		"locale":" en",
+		"last-updated":"2018-01-01",
+		"locale":"en",
 		"title":"Example Organization"
 	  },
 	"SiteName": "Title of example.com",
-    "Name":" Example Name",
+    "Name":"Your Website 2018",
     "Slogan":"Example Slogan",
 	"Main": "Home",
 
@@ -21,14 +21,17 @@
 	"carousel-e": "carousel e",
 	"carousel-f": "carousel f",
 
-	"Mail":" example@example.com",
-	"TR":" Türkçe",
-	"EN":" English",
-	"Search":" Go!",
-	"Lang":" Language",
+	"Mail":"example@example.com",
+	"TR":"Türkçe",
+	"EN":"English",
+	"Search":"Go!",
+	"Lang":"Language",
 
 	"about":" About",
 	"service": "Services",
 	"contact":" Contact",
+
+	"copy": "Copyright",
+	"subhead": "Subheading"
 
 }

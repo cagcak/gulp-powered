@@ -26,25 +26,25 @@ What things you need to install the software and how to install them:
 If you have already installed the packages above skip this part.
 If you don't have packages above, follow instructions below:
 
-1- Download nodejs + npm bundle from [here] ()
 ```
-2- npm install gulp-cli -g
-3- npm install gulp -D
+1- # Download nodejs + npm bundle from [here] (https://nodejs.org/en/download/current/)
+2- $ npm install gulp-cli -g
+3- $ npm install gulp -D
 ```
 
 ### Installing & Running
 
 #### Running with Browsersync web server
 ```
-1- npm install gulp-powered
-2- npm -i
-3- gulp
+1- $ npm install gulp-powered
+2- $ npm -i
+3- $ gulp
 ```
 
 or
 
 ```
-npm install gulp-powered && npm -i && gulp
+$ npm install gulp-powered && npm -i && gulp
 ```
 #### Running with live-server or other (configure port and mounting) web servers
 ```
@@ -53,6 +53,16 @@ npm install gulp-powered && npm -i && gulp
 3- $ live-server --port=3000 --open=/dist
 ```
 Now it must be running on localhost
+
+## FAQ
+
+#### 1: Modify i18n translation
+Before gulp production all translation files must be located inside 'src/locales/i18n/'
+After production they are copied into 'dist/locales/i18n/' as '<language-code>.json' (ex: en.json, fr.json)
+Translation strings have a key and a value like 'my-key':'my value' (ex: in en.json define as 'my-key':'my value' and in tr.json define as 'my-key':'benim değer')
+You can change one or add another anywhere inside .json files, then call them in html tags with 'data-' attribute;
+Before production : <p data-i18n="my-key"></p>
+After production :  <p data-i18n="my-key">my value</p>
 
 ## Built With
 
