@@ -34,7 +34,7 @@ If you don't have packages above, follow instructions below:
 
 ### Installing & Running
 
-# Running with Browsersync web server
+#### Running with Browsersync web server
 ```
 1- npm install gulp-powered
 2- npm -i
@@ -46,7 +46,7 @@ or
 ```
 npm install gulp-powered && npm -i && gulp
 ```
-# Running with live-server or other (configure port and mounting) web servers
+#### Running with live-server or other (configure port and mounting) web servers
 ```
 1- $ npm install gulp-powered && npm -i
 2- # change DIR as 'protocol + dev + dist' instead of 'protocol + dev' in 'src/partials/main.html' / line:7
