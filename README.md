@@ -57,12 +57,16 @@ Now it must be running on localhost
 ## FAQ
 
 #### 1: Modify i18n translation
-Before gulp production all translation files must be located inside 'src/locales/i18n/'
-After production they are copied into 'dist/locales/i18n/' as '<language-code>.json' (ex: en.json, fr.json)
-Translation strings have a key and a value like 'my-key':'my value' (ex: in en.json define as 'my-key':'my value' and in tr.json define as 'my-key':'benim değer')
-You can change one or add another anywhere inside .json files, then call them in html tags with 'data-' attribute;
-Before production : <p data-i18n="my-key"></p>
-After production :  <p data-i18n="my-key">my value</p>
+Before gulp production all translation files must be located inside ```src/locales/i18n/```
+
+After production they are copied into ```dist/locales/i18n/``` as ```<language-code>.json``` (ex: en.json, fr.json)
+
+Translation strings have a key and a value like ```'my-key':'my value'``` (ex: in en.json define as ```'my-key':'my value'``` and in tr.json define as ```my-key':'benim değer')```
+
+You can change one or add another anywhere inside .json files, then call them in html tags with ```data-``` attribute;
+
+Before production : ```<p data-i18n="my-key"></p>```
+After production :  ```<p data-i18n="my-key">my value</p>```
 
 ## Built With
 
