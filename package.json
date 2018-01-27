@@ -1,6 +1,6 @@
 {
   "name": "gulp-powered",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Gulp builded, Bootstrap-v4 powered static website app starter-kit project",
   "main": "index.js",
   "scripts": {
