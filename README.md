@@ -9,12 +9,12 @@ Whenever you think about building a soft-depended static web app project, just u
 These instructions below will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ## Features
-####  + Bootstrap 4
-####  + Fontawesome 5
-####  + jQuery.i18n
+####  + Bootstrap 4 Modern Business Template
+####  + Fontawesome 5 Icons
+####  + jQuery.i18n Internationalization plug-in
 ####  + History.js
 ####  + Server-less
-####  +
+####  + Nunjucks Templating Engine
 
 ### What is going on?
 
@@ -35,7 +35,7 @@ If you have already installed the packages above skip this part.
 If you don't have packages above, follow instructions below:
 
 ```
-1- # Download nodejs + npm bundle from [here] (https://nodejs.org/en/download/current/)
+1- # Download nodejs + npm bundle from [here](https://nodejs.org/en/download/current/)
 2- $ npm install gulp-cli -g
 3- $ npm install gulp -D
 ```
@@ -44,7 +44,7 @@ If you don't have packages above, follow instructions below:
 
 #### Running with Browsersync web server
 ```
-1- $ npm install gulp-powered
+1- $ git clone https://github.com/cagcak/gulp-powered.git && cd gulp-powered
 2- $ npm -i
 3- $ gulp
 ```
@@ -52,13 +52,13 @@ If you don't have packages above, follow instructions below:
 or
 
 ```
-$ npm install gulp-powered && npm -i && gulp
+$ git clone https://github.com/cagcak/gulp-powered.git && cd gulp-powered && npm -i && gulp
 ```
 > *Run `gulp minify` if you want to minify your html files inside `/dist` folder*
 
 #### Running with live-server or other (configure port and mounting) web servers
 ```
-1- $ npm install gulp-powered && npm -i
+1- $ git clone https://github.com/cagcak/gulp-powered.git && cd gulp-powered
 2- # change DIR as 'protocol + dev + dist' instead of 'protocol + dev' in 'src/partials/main.html' / line:7
 3- $ live-server --port=3000 --open=/dist
 ```
