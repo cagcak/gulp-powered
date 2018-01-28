@@ -8,6 +8,14 @@ Whenever you think about building a soft-depended static web app project, just u
 
 These instructions below will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+## Features
+####  + Bootstrap 4
+####  + Fontawesome 5
+####  + jQuery.i18n
+####  + History.js
+####  + Server-less
+####  +
+
 ### What is going on?
 
 When you install this project, it starts to build immediately by Gulp. Afterwards, there will be rendered files/folders inside the /dist directory. The web page you see, comes from only /dist folder and derivatives.
@@ -16,10 +24,10 @@ When you install this project, it starts to build immediately by Gulp. Afterward
 
 What things you need to install the software and how to install them:
 
-```
-- [nodejs & npm] (https://nodejs.org/en/)
-- [gulp] (https://gulpjs.com/)
-```
+
+* [nodejs & npm](https://nodejs.org/en/)
+* [gulp](https://gulpjs.com/)
+
 
 ### Preparing
 
@@ -46,6 +54,8 @@ or
 ```
 $ npm install gulp-powered && npm -i && gulp
 ```
+> *Run `gulp minify` if you want to minify your html files inside `/dist` folder*
+
 #### Running with live-server or other (configure port and mounting) web servers
 ```
 1- $ npm install gulp-powered && npm -i
@@ -82,6 +92,7 @@ After production :  ```<p data-i18n="my-key">my value</p>```
 ## Authors
 
 * **@cagcak** - *Gulp Starter Kit with Bootstrap v4* - [cagcak](https://github.com/cagcak)
+> *Insipred by* **@wzulfikar** - *Nunjucks (HTML template engine) starter kit* - [wzulfikar](https://github.com/wzulfikar/)
 
 
 ## License
