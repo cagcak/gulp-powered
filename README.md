@@ -35,7 +35,7 @@ If you have already installed the packages above skip this part.
 If you don't have packages above, follow instructions below:
 
 ```
-1- # Download nodejs + npm bundle from [here](https://nodejs.org/en/download/current/)
+1- # Download nodejs + npm bundle from https://nodejs.org/en/download/current/
 2- $ npm install gulp-cli -g
 3- $ npm install gulp -D
 ```
@@ -45,14 +45,14 @@ If you don't have packages above, follow instructions below:
 #### Running with Browsersync web server
 ```
 1- $ git clone https://github.com/cagcak/gulp-powered.git && cd gulp-powered
-2- $ npm -i
+2- $ npm i
 3- $ gulp
 ```
 
 or
 
 ```
-$ git clone https://github.com/cagcak/gulp-powered.git && cd gulp-powered && npm -i && gulp
+$ git clone https://github.com/cagcak/gulp-powered.git && cd gulp-powered && npm i && gulp
 ```
 > *Run `gulp minify` if you want to minify your html files inside `/dist` folder*
 
