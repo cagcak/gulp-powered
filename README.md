@@ -2,6 +2,8 @@
 
 A Client-side Gulp build, Bootstrap-v4 powered static website app starter-kit project
 
+![running](https://raw.githubusercontent.com/cagcak/gulp-powered/master/how-to-install-gulp-powered.gif)
+
 ## Getting Started
 
 Whenever you think about building a soft-depended static web app project, just use this kit to start developing on it. This boilerplate-like project is completely free-to-use for your public projects.  
@@ -9,12 +11,12 @@ Whenever you think about building a soft-depended static web app project, just u
 These instructions below will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ## Features
-####  + Bootstrap 4 Modern Business Template
-####  + Fontawesome 5 Icons
-####  + jQuery.i18n Internationalization plug-in
-####  + History.js
-####  + Server-less
-####  + Nunjucks Templating Engine
+#####  + Bootstrap 4 - Modern Business Template
+#####  + Fontawesome 5 - vectorized Icons
+#####  + jQuery.i18n - Internationalization plug-in
+#####  + History.js - powerful html4+html5 url state controller
+#####  + Server-less - no need to use SSI (Server Side Includes)
+#####  + Nunjucks Templating Engine - No comment. Let nunjucks talks...
 
 ### What is going on?
 
@@ -43,6 +45,9 @@ If you don't have packages above, follow instructions below:
 ### Installing & Running
 
 #### Running with Browsersync web server
+
+(installing by npm makes trouble currently, use git clone)
+
 ```
 1- $ git clone https://github.com/cagcak/gulp-powered.git && cd gulp-powered
 2- $ npm i
@@ -91,7 +96,7 @@ After production :  ```<p data-i18n="my-key">my value</p>```
 
 ## Authors
 
-* **@cagcak** - *Gulp Starter Kit with Bootstrap v4* - [cagcak](https://github.com/cagcak)
+* **@cagcak** - *Gulp Starter Kit with Bootstrap v4* - [cagcak](https://github.com/cagcak)![ecosystem]
 > *Insipred by* **@wzulfikar** - *Nunjucks (HTML template engine) starter kit* - [wzulfikar](https://github.com/wzulfikar/)
 
 
