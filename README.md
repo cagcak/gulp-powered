@@ -2,6 +2,8 @@
 
 A Client-side Gulp build, Bootstrap-v4 powered static website app starter-kit project
 
+![running](https://raw.githubusercontent.com/cagcak/gulp-powered/master/how-to-install-gulp-powered.gif)
+
 ## Getting Started
 
 Whenever you think about building a soft-depended static web app project, just use this kit to start developing on it. This boilerplate-like project is completely free-to-use for your public projects.  
@@ -91,7 +93,7 @@ After production :  ```<p data-i18n="my-key">my value</p>```
 
 ## Authors
 
-* **@cagcak** - *Gulp Starter Kit with Bootstrap v4* - [cagcak](https://github.com/cagcak)
+* **@cagcak** - *Gulp Starter Kit with Bootstrap v4* - [cagcak](https://github.com/cagcak)![ecosystem]
 > *Insipred by* **@wzulfikar** - *Nunjucks (HTML template engine) starter kit* - [wzulfikar](https://github.com/wzulfikar/)
 
 
